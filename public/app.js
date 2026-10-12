@@ -18,8 +18,7 @@ document.getElementById("add-class").addEventListener("submit", async function (
             courseNo: document.getElementById("courseNo").value,
             courseDesc: document.getElementById("courseDesc").value,
             lastSemTaught: document.getElementById("lastSemTaught").value,
-            unitCost: document.getElementById("maxStudents").value,
-            maxStudents: document.getElementById("").value
+            maxStudents: document.getElementById("maxStudents").value,
         }
 
         const response = await fetch("/api/courses", {
@@ -29,3 +28,5 @@ document.getElementById("add-class").addEventListener("submit", async function (
         });
     await loadOrders();
 });
+
+
